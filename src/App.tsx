@@ -1,10 +1,10 @@
-import "./styles.css";
-import { Javascript } from "./sheets/javascript";
+import './styles.css'
+import { Http } from './sheets/http'
 
 export default function App() {
   return (
     <div className="App">
-      <Javascript />
+      <Http />
     </div>
-  );
+  )
 }
