@@ -20,6 +20,11 @@ body {
   margin: 1.5rem;
 }
 
+#root {
+  max-width: 98%;
+  margin-inline: auto;
+}
+
 h1 {
   color: white;
   display: flex;
@@ -72,11 +77,12 @@ section ul li:nth-child(even) {
   background: var(--color-card);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 760px) {
   body {
     column-count: 2;
-    column-gap: 0.8rem;
+    column-gap: 0;
     max-width: 960px;
+    width: 95%;
     margin-inline: auto;
   }
 }
