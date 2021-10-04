@@ -1,2 +1,3 @@
-# cheat-sheet-creator
-Created with CodeSandbox
+# Cheat Sheet Creator
+
+To create Cheat Sheet
