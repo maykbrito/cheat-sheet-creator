@@ -1,0 +1,79 @@
+:root {
+  --hsl-color: 231;
+  --color-default: hsla(var(--hsl-color), 92%, 63%);
+
+  --hsl-dark: 240;
+  --color-bg: hsl(var(--hsl-dark), 6%, 4%);
+  --color-modal: hsl(var(--hsl-dark), 6%, 13%);
+  --color-card: hsl(var(--hsl-dark), 6%, 17%);
+}
+
+html,
+body,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  margin: 1.5rem;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: lowercase;
+}
+
+section {
+  border-bottom: 0.2rem solid var(--color-default);
+  border-radius: 0.25rem;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 0.8rem;
+  break-inside: avoid;
+
+  background: var(--color-modal);
+  color: white;
+}
+
+section h2 {
+  border-radius: 0.25rem 0.25rem 0 0;
+  background: var(--color-default);
+  padding: 0.4rem 0.8rem;
+  color: white;
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
+}
+
+section ul {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+section ul li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.4rem 0.8rem;
+  align-items: center;
+}
+
+section ul li:nth-child(even) {
+  background: var(--color-card);
+}
+
+@media (min-width: 560px) {
+  body {
+    column-count: 2;
+    column-gap: 0.8rem;
+  }
+}
