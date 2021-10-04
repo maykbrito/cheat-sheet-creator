@@ -1,7 +1,7 @@
 import { Section } from "../models/Section";
 import { Snippet } from "../models/Snippet";
 
-import { Header } from "../components/Header";
+import { Cheatsheet } from "../components/Cheatsheet";
 
 const snip = new Snippet("Javascript");
 
@@ -12,22 +12,5 @@ REGEXS.addLine("$", "End of string");
 snip.add(REGEXS);
 
 export function Javascript() {
-  return (
-    <>
-      <Header title={snip.title} />
-      {snip.elements.map((element) => (
-        <section id={element.id} key={element.id}>
-          <h2>{element.title}</h2>
-          <ul>
-            {element.lines.map((line) => (
-              <li key={line.snippet}>
-                <span>{line.snippet}</span>
-                {line.description}
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
-    </>
-  );
+  return <Cheatsheet title={snip.title} elements={snip.elements} />;
 }
