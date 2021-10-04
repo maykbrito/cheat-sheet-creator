@@ -27,7 +27,7 @@ export class Snippet {
   get elements(): ISnippetElements[] {
     const elements = []
     for (const snip of this.snippets) {
-      const id = Object.keys(snip)[0]
+      const id = snip?.title.replace(/\s/g, '-').toLocaleLowerCase()
       elements.push({
         id,
         title: snip?.title,
