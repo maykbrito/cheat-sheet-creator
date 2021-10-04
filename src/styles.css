@@ -12,7 +12,7 @@ html,
 body,
 input,
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -26,7 +26,8 @@ h1 {
   align-items: center;
   line-height: 0;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.75rem;
   text-transform: lowercase;
 }
 
@@ -75,5 +76,7 @@ section ul li:nth-child(even) {
   body {
     column-count: 2;
     column-gap: 0.8rem;
+    max-width: 960px;
+    margin-inline: auto;
   }
 }
